@@ -9,10 +9,9 @@ public class Hero {
     this.activity = activity;
   }
 
-  public void setActivity(Activity activity) {
+  public void setActivity(Activity activity) throws Exception {
     if(activity == null){
-      System.err.println("activity error");
-      System.exit(1);
+      throw new Exception("activity null");
     }
     this.activity = activity;
   }
